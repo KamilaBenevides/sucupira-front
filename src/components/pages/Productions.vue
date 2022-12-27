@@ -10,7 +10,7 @@
               <h2 class="text-start">{{ selectTeacher.nome }}</h2>
             </v-row>
             <v-row>
-              Última atualização do Lattes: {{ selectTeacher.ultima_atualizacao }}
+              Última atualização do Lattes: {{ selectTeacher.ultima_atualizacao || 'Nunca atualizado' }}
             </v-row>
           </v-row>
         </v-col>
