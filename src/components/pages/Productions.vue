@@ -234,7 +234,7 @@
                 ></v-autocomplete>
               </v-col>
             </v-row>                                 
-            <v-row
+            <!-- <v-row
             v-for="(textField, i) in textFields" :key="i"
             >
               <v-col cols="3">
@@ -259,7 +259,7 @@
                   <v-btn @click="remove(i)" class="text-none error">delete</v-btn>
                 </v-col>
               </v-row>
-                <v-btn @click="add" class="text-none primary">Novo coautor</v-btn>
+                <v-btn @click="add" class="text-none primary">Novo coautor</v-btn> -->
             
             <v-row class="d-flex justify-start align-center">
               <v-col cols="auto">
@@ -271,7 +271,7 @@
                 <v-alert class="ma-0"
                   text
                   color="green"
-                >{{ editedItem.qualis }}</v-alert>
+                >{{ editedItem.qualis || 'Sem qualis' }}</v-alert>
               </v-col>
             </v-row>
           </v-card-text>
